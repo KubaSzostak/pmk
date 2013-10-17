@@ -1,0 +1,47 @@
+object FmSpl: TFmSpl
+  Left = 345
+  Top = 261
+  Cursor = crHourGlass
+  BorderStyle = bsNone
+  Caption = 'FmSpl'
+  ClientHeight = 173
+  ClientWidth = 314
+  Color = clNavy
+  Font.Charset = EASTEUROPE_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Shape: TShape
+    Left = 0
+    Top = 0
+    Width = 314
+    Height = 173
+    Align = alClient
+    Brush.Color = clSkyBlue
+    Pen.Color = clNavy
+    Pen.Width = 2
+  end
+  object Label1: TLabel
+    Left = 0
+    Top = 0
+    Width = 314
+    Height = 173
+    Align = alClient
+    Alignment = taCenter
+    Caption = 'Pmk'
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clNavy
+    Font.Height = -37
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+    Layout = tlCenter
+  end
+end

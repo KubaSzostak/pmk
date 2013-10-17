@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{DAC3BF77-0D97-4014-8BCF-CE5112B315A5}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="Pmk.exe">pmk\Pmk.bdsproj</Projects>
+      <Projects Name="IdentTest.exe">IdentifyTest\IdentTest.bdsproj</Projects>
+      <Projects Name="Targets">Pmk.exe IdentTest.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

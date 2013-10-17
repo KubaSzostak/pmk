@@ -1,0 +1,24 @@
+object BaseForm: TBaseForm
+  Left = 294
+  Top = 265
+  Width = 465
+  Height = 292
+  Caption = 'BaseForm'
+  Color = clBtnFace
+  Font.Charset = EASTEUROPE_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  Scaled = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+end

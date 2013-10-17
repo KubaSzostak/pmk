@@ -1,0 +1,72 @@
+unit PmkExpExc;
+
+interface
+
+uses
+  SysUtils, Classes, Variants, Db, ComObj,  GeoSysUtils, PmkResStr;
+
+procedure SendToExcel(aDataSet: TDataSet);
+
+implementation
+
+function GetExcelApp: OleVariant;
+begin
+  try
+      Result := CreateOleObject('Excel.Application'); // TExcelApplication.Create(nil);
+  except
+    RaiseError(emCantConnectToExcel);
+  end;
+end;
+
+procedure SendToExcel(aDataSet: TDataSet);
+var
+  PreviewToExcel: OleVariant; // TExcelApplication;
+  RangeE: OleVariant; //   ExcelRange;
+  I, Row: Integer;
+  Bookmark: TBookmarkStr;
+begin
+  PreviewToExcel := GetExcelApp; // TExcelApplication.Create(nil);
+  //PreviewToExcel.Connect;
+  //PreviewToExcel.Workbooks.Add(NULL, 0);
+  PreviewToExcel.Workbooks.Add;
+  RangeE := PreviewToExcel.ActiveCell;
+
+  for I := 0 to aDataSet.Fields.Count - 1 do
+  if (aDataSet.Fields[I].Visible) then
+  begin
+    RangeE.Value := aDataSet.Fields[I].DisplayLabel;
+    RangeE.Font.Bold := true;
+    RangeE := RangeE.Next;
+  end;
+
+  aDataSet.DisableControls;
+  try
+    Bookmark := aDataSet.Bookmark;
+    try
+      aDataSet.First;
+      Row := 2;
+      while not aDataSet.EOF do
+      begin
+        //Write down Record As Row in msExcel
+        RangeE := PreviewToExcel.Range['A' + IntToStr(Row), 'A' + IntToStr(Row)];
+        for I := 0 to aDataSet.Fields.Count - 1 do
+        if (aDataSet.Fields[I].Visible) then
+        begin
+          RangeE.Value := aDataSet.Fields[I].AsVariant;//.AsString;
+          RangeE := RangeE.Next;
+        end;
+        aDataSet.Next;
+        Inc(Row);
+      end;
+    finally
+      aDataSet.Bookmark := Bookmark;
+    end;
+  finally
+    aDataSet.EnableControls;
+  end;
+
+  PreviewToExcel.Visible := True;
+  //PreviewToExcel.Disconnect;
+end;
+
+end.

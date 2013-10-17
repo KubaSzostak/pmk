@@ -1,0 +1,54 @@
+program Pmk;
+
+{%File '..\info.txt'}
+
+uses
+  Forms,
+  Windows,
+  GeoControls,
+  ComCtrls,
+  GeoSplash,
+  FrmMain in 'FrmMain.pas' {FmMain},
+  DatMod in 'DatMod.pas' {Dm: TDataModule},
+  FrmPrintPreview in 'FrmPrintPreview.pas' {FmPrintPreview},
+  FrmBaseForm in 'FrmBaseForm.pas' {BaseForm},
+  FrmBaseDBForm in 'FrmBaseDBForm.pas' {BaseDBForm},
+  FrmBaseTabForm in 'FrmBaseTabForm.pas' {BaseTabForm},
+  FrmBaseCreatorForm in 'FrmBaseCreatorForm.pas' {BaseCreatorForm},
+  FrmDhCycle in 'FrmDhCycle.pas' {FmDhCycle},
+  FrmDhCycleInfo in 'FrmDhCycleInfo.pas' {FmDhCycleInfo},
+  FrmObsDh in 'FrmObsDh.pas' {FmObsDh},
+  FrmDeltaDh in 'FrmDeltaDh.pas' {FmDeltaDh},
+  FrmDeltaH in 'FrmDeltaH.pas' {FmDeltaH},
+  FrmFixedH in 'FrmFixedH.pas' {FmFixedH},
+  FrmResH in 'FrmResH.pas' {FmResH},
+  FrmGenDh in 'FrmGenDh.pas' {FmGenDh},
+  FrmBaseCalcMovement in 'FrmBaseCalcMovement.pas' {BaseCalcMovement},
+  FrmSelectMovement in 'FrmSelectMovement.pas' {FmSelectMovement},
+  FrmCalcAbsDhMvmnt in 'FrmCalcAbsDhMvmnt.pas' {FmCalcAbsDhMvmnt},
+  FrmCalcRelDhMvmnt in 'FrmCalcRelDhMvmnt.pas' {FmCalcRelDhMvmnt},
+  FrmCalcRelHMvmnt in 'FrmCalcRelHMvmnt.pas' {FmCalcRelHMvmnt},
+  FrmCalcAbsHMvmnt in 'FrmCalcAbsHMvmnt.pas' {FmCalcAbsHMvmnt},
+  FrameSelectItems in '..\SelectItems\FrameSelectItems.pas' {SelectItems: TFrame},
+  PmkFiles in 'PmkFiles.pas',
+  PmkStorage in 'PmkStorage.pas',
+  PmkResStr in 'PmkResStr.pas',
+  PmkMutex in 'PmkMutex.pas';
+
+{$R *.res}
+
+begin
+  if not ValidComCtlVersion(ComCtlVersionIE401, True) then
+    exit;
+  Application.Initialize;
+  Application.Title := 'Pmk';
+  ShowSplashForm;
+ try
+  Application.CreateForm(TFmMain, FmMain);
+  Application.CreateForm(TDm, Dm);
+  Sleep(777); // Poka¿ d³u¿ej SplashForm
+ finally
+  CloseSplashForm;
+ end;
+  Application.Run;
+end.

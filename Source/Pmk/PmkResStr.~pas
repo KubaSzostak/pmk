@@ -1,0 +1,69 @@
+unit PmkResStr;
+
+interface
+
+resourcestring
+  sVersion = 'Wersja: %s';
+  sCount = 'Iloœæ: %d';
+  sAppDsc = 'Program do obliczeñ przemiesczeñ pionowych.';
+
+  emNotSupported = 'Ta opcja jescze nie dzia³a';
+
+  dmSaveChanges = 'Zapisaæ zmiany?';
+  dmDeleteObs = 'Usun¹æ wszystkie obserwacje z "%s"?';
+
+  // Cycles
+  dmDeleteCycle = 'Usun¹æ "%s"?';
+  dmEmptyTable = 'Usun¹æ wszystkie dane z tabeli?';
+  emNoCycleName = 'Nie znaleziono cyklu "%s".';
+  emDeleteCykl1 = 'Nie mo¿na usun¹æ cyklu wyjœciowego.';
+  emCycleExists = 'Cykl o nazwie "%s" ju¿ istnieje.';
+  emNoCalcCycle = 'Nie wskazano cyklu pomiarowego dla którego nale¿y wykonaæ obliczenia';
+  emCantCalcCycle0 = 'Nie mo¿na wykonaæ obliczeñ dla cyklu wyjœciowego';
+  emNotEnoughObs = 'Za ma³o obserwacji.';
+  emNotEnoughCycles = 'Za ma³o cykli pomiarowych. Do obliczania przemiesczeñ musz¹ byæ podane przynajmniej dwa cykle pomiarowe.';
+  emCantCopyDhObs = 'Nie mo¿na kopiowaæ danych do cyklu wyjœciowego';
+  emNoFixedPoints = 'Nie mo¿na stworzyæ listy punktów przeznaczonych na punkty odniesienia.';
+  emNoFixedHPoints = 'Przed obliczeniem przemieszczeñ na podstawie niezale¿nych sieci ró¿nic wysokoœci h i h'' nale¿y pdaæ rzêdne reperów sta³ych';
+
+  emSameBeginEndPoint = 'Punkt pocz¹tkowy i koñcowy musz¹ siê ró¿niæ';
+  emMaxPointCount = 'Maksymalna iloœæ punktów wynosi %d';
+
+  // Process messages
+  pmCheckObservations = 'Sprawdzanie poprawnoœci danych obserwacyjnych...';
+  pmCheckFunctionData = 'Sprawdzanie definicji wektorów funkcyjnych...';
+  pmGetMemory = 'Przydzielanie pamiêci...';
+  pmFreeMemory = 'Zwalnianie pamiêci...';
+  pmLoadFunctionData = 'Tworzenie macierzy wektorów funkcyjnych...';
+  pmLoadObservations = 'Tworzenie uk³adu równiañ poprawek...';
+  pmLoadData = '£adowanie danych...';
+  pmCheckData = 'Sprawdzanie poprawnoœci danych...';
+  pmCalc = 'Obliczenia...';
+  pmSaveResults = 'Zapisywanie wyników obliczeñ...';
+
+  pmGenerateObservations = 'Generowanie obserwacji...';
+
+  // Creator
+  cmMovementInfo = 'Informacje';
+  cmSelectCycle = 'Cykl pomiarowy';
+  cmInitialization = 'Inicjalizacja obliczeñ';
+  cmErrors = 'B³êdy i ostrze¿enia';
+  cmSelectFixedPionts = 'Wybór punktów odniesienia';
+  cmCalcFixedPionts = 'Weryfikacja sta³oœci punktów odniesienia';
+  cmFixedPointsGroup = 'Grupa punktów tworz¹ca uk³ad odniesienia';
+  cmEstimationType = 'Typ wyrównania';
+  cmEstimation = 'Obliczenia';
+  cmEnd = 'Koniec obliczeñ';
+  cmFreeEstInfo = 'Podczas wyrónania nast¹pi jednoczesna transformacja '
+    +'przemiesczeñ pionowych na uk³ad okreœlony przez zbiór punktów odniesienia. ';
+  cmFixedEstInfo = 'Wyrównanie zostanie wykonane z za³o¿eniem bezb³êdnoœci '
+    +'zidentyfikowanych punktów odniesienia.';
+
+  emGenRepCount = 'Iloœæ reperów nie mo¿e byæ mniejsza od 3';
+  emGenLowFixedPointGroupCount = 'Iloœæ grup reperów sta³ych nie mo¿e byæ mniejsza od 2';
+  emGenFixedPointCount = 'Przy podanej iloœci grup reperów odniesienia minimalna iloœæ reperów sta³ych wynosi %d';
+
+
+implementation
+
+end.

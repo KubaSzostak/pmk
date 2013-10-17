@@ -1,0 +1,35 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = GeoCalc7.bpl Mtx7.bpl GeoRtl.bpl geovcl.bpl Pmk.exe IdentTest.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+Pmk.exe: pmk\Pmk.dpr
+  $(DCC)
+
+GeoCalc7.bpl: ..\..\..\Units\GeoUnits\GeoCalc7.dpk
+  $(DCC)
+
+Mtx7.bpl: ..\..\..\Units\GeoUnits\Mtx7.dpk
+  $(DCC)
+
+GeoRtl.bpl: ..\..\..\Units\GeoUnits\GeoRtl.dpk
+  $(DCC)
+
+geovcl.bpl: ..\..\..\Units\GeoUnits\geovcl.dpk
+  $(DCC)
+
+IdentTest.exe: IdentifyTest\IdentTest.dpr
+  $(DCC)
+
+

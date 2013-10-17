@@ -1,0 +1,15 @@
+unit TestFixedPoints;
+
+interface
+
+uses
+  GeoMovements;
+
+type
+  TTestFiexedPoints = class(TCustomFixedPoints)
+  
+  end;
+
+implementation
+
+end.
