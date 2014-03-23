@@ -1,0 +1,471 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+
+<title>Pmk - opis działania programu</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<link href="pmk_man/geosoft.css" rel="stylesheet" type="text/css"></head>
+
+
+<body>
+
+
+	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr><td valign="top" height="80">
+	<table class="clsHeaderTable" width="100%" border="0" cellpadding="0" cellspacing="0">        
+		<tbody><tr>          
+			<td><a href="http://geosoft.glt.pl/"><img src="pmk_man/geosoft.gif" border="0"></a></td>
+			<td> </td>
+		</tr>      
+	</tbody></table> 
+	
+		</td></tr>
+		<tr><td align="center" valign="top">		
+				<table height="100%" width="700" border="0" cellpadding="0" cellspacing="0">
+					<tbody><tr>
+						<td width="20"> </td>
+	
+				<td valign="top">
+	
+<div>
+							  
+	<table class="clsTitleTable" border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td nowrap="nowrap" class="clsTitleCell">Pmk - opis działania programu</td>
+			<td nowrap="nowrap"><img src="pmk_man/title_triangle.gif" width="19" height="18"></td>
+			<td width="100%"> </td>
+		</tr>
+	</tbody></table> 
+		<dl><dt><a href="#Wst%EAp">Wstęp</a></dt><dt><a href="#Om%F3wienieFunkcjiPogramu">Omówienie funkcji programu</a>
+			</dt><dd><a href="#MenuPlik">Menu Plik</a> </dd><dd><a href="#MenuObserwacje">Menu Obserwacje</a></dd><dd><a href="#MenuWyniki">Menu Wyniki</a> </dd><dd><a href="#MenuDane">Menu Dane</a> </dd><dd><a href="#MenuObliczenia">Menu Obliczenia</a> </dd><dd><a href="#MenuPomoc">Menu Pomoc</a>  </dd><dt><a href="#EdycjaIPrzegl%B1danieDanych">Edycja i przeglądanie danych</a></dt><dt><a href="#KreatorObliczaniaPrzemieszcze%F1Pionowych">Kreator obliczania przemieszczeń pionowych</a> </dt><dt><a href="#GeneratorObserwacji">Generator obserwacji</a> </dt></dl>
+</div>
+
+
+<!-- Wstęp -->
+<div>
+	<a name="Wstęp"></a>
+							  
+	<table class="clsTitleTable" border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td nowrap="nowrap" class="clsTitleCell">Wstęp</td>
+			<td nowrap="nowrap"><img src="pmk_man/title_triangle.gif" width="19" height="18"></td>
+			<td width="100%"> </td>
+		</tr>
+	</tbody></table> 
+		<p>Program <i>Pmk</i> służy do przeprowadzania 
+	obliczeń przemieszczeń pionowych. Ze względu na złożoność procesu obliczeniowego program 
+	prowadzi użytkownika przez kolejne etapy obliczeń przy pomocy kreatorów. Program umożliwia 
+	obliczenie przemieszczeń pionowych względnych oraz bezwzględnych. Przemieszczenia bezwzględne 
+	mogą być prowadzone z założeniem bezbłędności punktów stałych lub z odrzuceniem tej 
+	bezbłędności.</p>
+	<p>Program działa w systemie Windows 98, Windows NT lub nowszych. 
+	Wymagania sprzętowe są takie same jak dla systemu operacyjnego, przy czym należy pamiętać, 
+	że obliczenia na dużych zbiorach danych powoduje zwiększenie zapotrzebowania na 
+	pamięć operacyjną.</p>
+</div>
+
+<!-- Omówienie funkcji pogramu -->
+<div>
+<a name="OmówienieFunkcjiPogramu"></a>
+						  
+	<table class="clsTitleTable" border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td nowrap="nowrap" class="clsTitleCell">Omówienie funkcji pogramu</td>
+			<td nowrap="nowrap"><img src="pmk_man/title_triangle.gif" width="19" height="18"></td>
+			<td width="100%"> </td>
+		</tr>
+	</tbody></table> 
+	<p></p>Po uruchomieniu aplikacji pojawia się główne 
+okno programu (rys. 5.1), na którym znajduje się menu oraz przyciski szybkiego wyboru. Każdy przycisk szybkiego 
+wyboru ma swój odpowiednik w menu. Z niektórymi funkcjami skojarzone są skróty klawiszowe. <p></p>
+
+
+<p align="center"><img src="pmk_man/pmk.gif"></p>
+<p align="center"><b>Rys. 5.1</b> Główne okno programu wraz z otworzonymi oknami do edycji danych</p>
+<br><br>
+
+<p>
+<a name="MenuPlik"></a>
+<strong>Menu Plik</strong>
+</p><ul>
+  <li><i>Nowy</i> <img src="pmk_man/FileNew.gif"> - tworzy nowy dokument programu 
+    <i>Pmk</i>.</li>
+  <li><i>Otwórz...</i> <img src="pmk_man/FileOpen.gif"> - otwiera istniejący plik programu <i>Pmk</i>.</li>
+  <li><i>Zapisz</i> <img src="pmk_man/FileSave.gif"> - zapisuje wszystkie dane do pliku na dysk.</li>
+	<li><i>Zapisz jako...</i> - pozwala zapisać dane pod inną nazwą pliku.</li>
+  <li><i>Zamknij</i>  <img src="pmk_man/FileClose.gif"> -zamyka aktywny dokument.</li>
+  <li><i>Ustawienia drukarki</i> - wyświetla okno, w którym można zmienić ustawienia drukarki.</li>
+  <li><i>Zakończ</i> - powoduje zamknięcie aktywnego dokumentu i wyjście z programu.</li>
+</ul>
+<p></p>
+
+<p>
+<a name="MenuObserwacje"></a>
+<strong>Menu Obserwacje</strong>
+</p><ul>
+  <li><i>Obserwacje Dh...</i> <img src="pmk_man/ObsDh.gif" width="16" height="16"> - otwiera okno z tabelą do edycji obserwowanych przewyższeń.</li>
+  <li><i>Repery stałe...</i> <img src="pmk_man/ObsRepStale.gif" width="16" height="16"> - otwiera okno z tabelą do edycji reperów stałych.</li>
+  <li><i>Dodaj cykl</i> <img src="pmk_man/Image8.gif" width="16" height="16"> - dodaje cykl pomiarowy do dokumentu. Polecenie to jest 
+	  aktywne tylko podczas edycji <i>Obserwacji Dh.</i>
+	</li>
+  <li><i>Usuń cykl</i> <img src="pmk_man/Image9.gif" width="16" height="16"> - usuwa aktywny cykl pomiarowy z dokumentu. Wszystkie dane 
+	  skojarzone z tym cyklem są również usuwane. Polecenie to jest aktywne tylko podczas edycji <i>Obserwacji Dh.</i>
+	</li>
+  <li><i>Edytuj cykl...</i> <img src="pmk_man/Image10.gif"> - otwiera okno, w którym można edytować podstawowe 
+  	informacje o cyklu (zmienić nazwę, dodać dodatkowy opis, ustawić datę pomiaru).
+  </li>
+  <li><i>Kopiuj obserwacje z cyklu wyjściowego</i> - ta opcja jest bardzo przydatna szczególnie 
+	  dla obliczeń metodą różnicową. Kopiuje wszystkie obserwacje z cyklu wyjściowego do cyklu aktualnego. 
+    Ponieważ ilość stanowisk jest zazwyczaj taka sama w obu cyklach pomiarowych, 
+    to wystarczy zmienić tylko wartości przewyższeń, bez żmudnego wpisywania wszystkich danych.</li>
+</ul>
+<p></p>
+
+<p>
+<a name="MenuWyniki"></a>
+<strong>Menu Wyniki</strong>
+</p><p>Wszystkie funkcje znajdujące się w tym menu są dostępne dopiero po wykonaniu obliczeń.</p>
+<ul>
+  <li><i>Różnice przemieszczeń...</i> <img src="pmk_man/Image11.gif"> - otwiera okno z tabelą 
+	  zawierającą obliczone różnice przemieszczeń wraz z ich błędami.
+  </li>
+  <li><i>Przemieszczenia reperów...</i> <img src="pmk_man/Image12.gif"> - otwiera okno z tabelą 
+	  zawierającą obliczone przemieszczenia reperów.
+	</li>
+  <li><i>Rzędne reperów...</i> <img src="pmk_man/Image13.gif"> - otwiera okno z tabelą 
+	  zawierającą obliczone rzędne reperów. Ta funkcja dostępna jest tylko w 
+    przypadku obliczania przemieszczeń metodą różnic rzędnych.
+  </li>
+</ul>
+<p></p>
+
+<p>
+<a name="MenuDane"></a>
+<strong>Menu Dane</strong>
+</p><p>Te funkcje dostępne są tylko dla okien pozwalających na edycję danych, 
+a więc dla <i>Obserwacje Dh</i> i <i>Repery stałe</i>.</p>
+<ul>
+  <li><i>Wstaw wiersz <img src="pmk_man/Image14.gif"></i> - wstawia nowy wiersz do tabeli.</li>
+  <li><i>Usuń wiersz <img src="pmk_man/Image15.gif"></i> - usuwa zaznaczony wiersz z tabeli.</li>
+  <li><i>Usuń wszystkie dane z tabeli <img src="pmk_man/Image16.gif"></i> - usuwa wszystkie dane z tabeli.</li>
+  <li><i>Drukuj <img src="pmk_man/Image17.gif"> </i> - drukuje dane zawarte w aktywnym oknie.</li>
+  <li><i>Podgląd wydruku... <img src="pmk_man/Image18.gif"> </i> - otwiera podgląd wydruku danych zawartych w aktywnym oknie </li>
+</ul>
+<p></p>
+
+<p>
+<a name="MenuObliczenia"></a>
+<strong>Menu Obliczenia</strong>
+</p><ul>
+  <li><i>Oblicz przemieszczenia... <img src="pmk_man/Image19.gif"></i> - po wywołaniu tego polecenia otwiera 
+	  się kreator obliczeń przemieszczeń pionowych.
+  </li>
+  <li><i>Generator obserwacji... <img src="pmk_man/Image20.gif"> </i>-pozwala na wygenerowanie przypadkowych wartości obserwacji. </li>
+</ul>
+<p></p>
+
+<p>
+<a name="MenuPomoc"></a>
+<strong>Menu Pomoc</strong>
+</p><ul>
+  <li><i>O programie...<img src="pmk_man/Image21.gif"> </i> - otwiera okno z podstawowymi informacjami o programie.</li>
+  <li><i>Lista życzeń.</i>.. <img src="pmk_man/Image22.gif"> - otwiera domyślny pogram do obsługi poczty elektronicznej, 
+  	za pomocą którego można przesłać swoje życzenia związane z programem.
+	</li>
+</ul>
+<p></p>
+</div>
+
+<!-- Edycja i przeglądanie danych -->
+<div>
+<a name="EdycjaIPrzeglądanieDanych"></a>
+						  
+	<table class="clsTitleTable" border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td nowrap="nowrap" class="clsTitleCell">Edycja i przeglądanie danych</td>
+			<td nowrap="nowrap"><img src="pmk_man/title_triangle.gif" width="19" height="18"></td>
+			<td width="100%"> </td>
+		</tr>
+	</tbody></table> 
+	<p>Dane zgromadzone w programie <i>Pmk</i> są prezentowane za pomocą tabel. Dotyczy to danych 
+wejściowych (<i>Obserwacje Dh...</i> <img src="pmk_man/ObsDh.gif" width="16" height="16">, 
+<i>Repery stałe...</i> <img src="pmk_man/ObsRepStale.gif" width="16" height="16">) oraz danych wyjściowych (wyniki obliczeń). 
+W tabeli są prezentowane dane tylko dla wybranego cyklu pomiarowego. Przełączanie pomiędzy cyklami pomiarowymi 
+następuje przez przełączanie zakładek znajdujących się na dole tabeli (rys. 5.2). 
+Można również użyć skrótu klawiaturowego Ctrl+L, który przełącza na ostatnio aktywną zakładkę.
+</p>
+
+<p align="center"><img src="pmk_man/Image23.gif"></p>
+<p align="center"><b>Rys. 5.2</b> Zakładki umożliwiające przełączanie między cyklami pomiarowymi.</p>
+<br><br>
+
+<p>Każda tabela może być wydrukowana za pomocą polecenia <i>Drukuj</i> <img src="pmk_man/Image17.gif">. Przed 
+wydrukiem można skorzystać z funkcji <i>Podgląd wydruku... <img src="pmk_man/Image18.gif"></i>. 
+Oprócz tego dla tabel, w których można wprowadzać dane(<i>Obserwacje Dh... <img src="pmk_man/ObsDh.gif" width="16" height="16">, 
+Repery stałe...<img src="pmk_man/ObsRepStale.gif" width="16" height="16"></i>) aktywne są polecenia 
+<i>Wstaw wiersz <img src="pmk_man/Image14.gif">, Usuń wiersz <img src="pmk_man/Image15.gif">, 
+Usuń wszystkie dane z tabeli <img src="pmk_man/Image16.gif"></i>.
+</p>
+
+<p align="center"><img src="pmk_man/Image24.gif"></p>
+<p align="center"><b>Rys. 5.3</b>. Podgląd wydruku <i>Obserwacji Dh</i>.</p>
+<br><br>
+</div>
+
+<!-- Kreator obliczania przemieszczeń pionowych -->
+<div>
+<a name="KreatorObliczaniaPrzemieszczeńPionowych"></a>
+						  
+	<table class="clsTitleTable" border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td nowrap="nowrap" class="clsTitleCell">Kreator obliczania przemieszczeń pionowych</td>
+			<td nowrap="nowrap"><img src="pmk_man/title_triangle.gif" width="19" height="18"></td>
+			<td width="100%"> </td>
+		</tr>
+	</tbody></table> 
+	
+<p>
+Obliczanie przemieszczeń pionowych jest procesem złożonym. Można wybierać spośród wielu wariantów obliczeń: 
+przemieszczenia bezwzględne, przemieszczenia względne, założenie bezbłędności wyznaczenia punktów nawiązania lub 
+jego odrzucenie. Z tego powodu program <i>Pmk</i>  obliczanie przemieszczeń pionowych wykonuje przy użyciu kreatora, 
+który prowadzi użytkownika przez kolejne etapy procesu obliczeniowego. 
+</p>
+
+<p>Na początku kreator prosi o wybór sposobu prowadzenia obliczeń. 
+Można wybrać spośród czterech sposobów:
+	</p><ul>
+		<li>Obliczanie przemieszczeń bezwzględnych na podstawie zmian różnic przewyższeń <i>h-h´</i> (metoda różnicowa).</li>
+		<li>Obliczanie przemieszczeń bezwzględnych na podstawie różnic rzędnych <i>H</i> i <i>H´</i>. </li>
+		<li>Obliczanie przemieszczeń względnych na podstawie zmian różnic przewyższeń <i>h-h´</i> (metoda różnicowa) </li>
+		<li>Obliczanie przemieszczeń względnych na podstawie różnic rzędnych <i>H</i> i <i>H´</i>.</li>
+	</ul>
+<p></p>
+
+
+<p align="center"><img src="pmk_man/Image25.gif"></p>
+<p align="center"><b>Rys. 5.4</b> Wybór sposobu obliczania przemieszczeń</p>
+<br><br>
+
+
+<p>Obliczanie przemieszczeń na na podstawie różnic rzędnych <i>H</i> i <i>H´</i> 
+  realizowane na podstawie wspólnego wyrównania pomierzonych różnic rzędnych. 
+  W wyniku uzyskuje się rzędne reperów w pomiarze wyjściowym i aktualnym. Wielkości 
+  przemieszczeń oblicza się z różnicy między rzędnymi wyjściowymi a rzędnymi aktualnymi 
+  badanych reperów. </p>
+
+<p>Przemieszczenia pionowe można równiez obliczyć na podstawie zmian różnic przewyższeń 
+  <i>h-h´</i> (metodą różnicową). Sposób ten polega na obliczeniu zmian 
+  różnic wysokości między poszczególnymi reperami w pomiarze wyjściowym i aktualnym 
+  oraz wyrównanie ich procedurą parametryczną. W wyrównaniu tym parametrami są 
+  bezpośrednio wielkości przemieszczeń reperów. </p>
+
+
+<p>Po wybraniu sposobu prowadzenia obliczeń przemieszczeń 
+pionowych kreator prosi o wskazanie cyklu pomiarowego, dla którego należy wykonać obliczenia. 
+Obliczenia są zawsze wykonywane względem cyklu wyjściowego. Można zaznaczyć tylko jeden cykl pomiarowy, 
+dla którego należy wykonać obliczenia. W przypadku gdy we wskazanym cyklu jest zbyt mało obserwacji do 
+obliczenia przemieszczeń, kreator wyświetli odpowiednią informację i zakończy działanie.
+</p>
+
+<p align="center"><img src="pmk_man/Image26.gif"></p>
+<p align="center"><b>Rys. 5.5</b> Wybór cyklu pomiarowego, dla którego należy wykonać obliczenia.</p>
+<br><br>
+
+<p>Po wskazaniu cyklu pomiarowego kreator wykonuje 
+wstępne sprawdzenie danych obserwacyjnych. Kreator sprawdza czy jest wystarczając ilość obserwacji. 
+Dla przemieszczeń obliczanych metodą różnicową sprawdza czy wszystkie obserwacje z cyklu, 
+dla którego nastąpi obliczenie przemieszczeń znajdują się w cyklu wyjściowym, a więc czy będzie możliwe 
+obliczenie przemieszczenia dla każdego reperu z cyklu wyjściowego. Wyświetla również ostrzeżenia o obserwacjach dodatkowych, 
+które nie będą uwzględniane w obliczeniach. Podczas sprawdzania danych pokazany jest wskaźnik, 
+który pokazuje postęp obliczeń (rys. 5.6).
+</p>
+
+<p align="center"><img src="pmk_man/Image27.gif"></p>
+<p align="center"><b>Rys. 5.6</b> Wskaźnik postępu obliczeń.</p>
+<br><br>
+
+<p>Jeżeli wstępna kontrola danych wejściowych zakończy się pomyślnie kreator przechodzi 
+  do następnego etapu, w którym należy wskazać punkty odniesienia (rys. 5.7). 
+  W przypadku obliczania przemieszczeń względnych możliwe jest wskazanie tylko 
+  jednego punktu odniesienia, natomiast dla przemieszczeń bezwzględnych należy 
+  wskazać co najmniej dwa repery odniesienia. </p>
+<p>Jeżeli wybrano obliczanie przemieszczeń pionowych na podstawie zmian różnic 
+  przewyższeń <i>h-h´ </i>do wyboru są wszystkie repery z cyklu wyjściowego podane 
+  w tabeli <i>Obserwacje Dh...</i> <img src="pmk_man/ObsDh.gif" width="16" height="16">. Natomiast w przypadku 
+  obliczeń prowadzonych na podstawie różnic rzędnych <i>H</i> i<i> H´</i> można 
+  wybierać tylko spośród reperów, które znajdują się w tabeli <i>Repery stałe...</i> 
+  <img src="pmk_man/ObsRepStale.gif" width="16" height="16">. </p>
+
+<p>Przycisk <img src="pmk_man/Image28.gif"> służy do przeniesienia zbioru reperów 
+  zaznaczonych na liście wszystkich reperów do listy reperów przeznaczonych na 
+  punkty odniesienia. Przycisk <img src="pmk_man/Image29.gif"> przenosi wszystkie 
+  repery bez względu na zaznaczenie. Natomiast przycisk <img src="pmk_man/Image30.gif"> 
+  pozwala na dodanie reperów według wskazanego filtru. Np. filtr "Rp*" 
+  przenosi wszystkie repery rozpoczynające się od liter "Rp". </p>
+
+<p align="center"><img src="pmk_man/Image31.gif"></p>
+<p align="center"><b>Rys. 5.7</b> Wybór reperów przeznaczonych na punkty odniesienia.</p>
+<br><br>
+
+
+<p>Po wyborze reperów odniesienia kreator przechodzi 
+do następnej części obliczeń. Jeżeli jest to obliczanie przemieszczeń względnych następuje wyrównanie obserwacji, 
+a rezultaty obliczeń są od razu zapisywane do dokumentu i kreator kończy swoje działanie. 
+</p>
+
+<p>W przypadku obliczania przemieszczeń bezwzględnych kreator wykonuje wyrównanie wstępne 
+zgodnie z zasadą wyrównania swobodnego sieci. Na podstawie funkcji niewiadomych  wyznaczonych z wyrównania 
+oraz błędów średnich tych funkcji przeprowadzana jest kontrola stałości wskazanych reperów odniesienia 
+oraz identyfikacja grup reperów stałych. 
+</p>
+
+<p>Po zakończeniu obliczeń kreator wyświetla wyniki identyfikacji. W tym etapie trzeba 
+wybrać grupę reperów stałych, która ma być wzięta do obliczeń. Można zmienić parametry identyfikacji 
+grupy reperów stałych: minimalną ilość reperów stałych oraz współczynnik k. Po zmianie tych parametrów 
+następuje ponowna identyfikacja grup reperów stałych. Lista grup reperów stałych jest wyświetlona w 
+prawym dolnym rogu. W panelu po prawej stronie są wyświetlane dane dotyczące wskazanej grupy reperów stałych. 
+Informacje dotyczące wskazanej grupy reperów stałych są pogrupowane z pomocą zakładek, które pozwalają 
+przełączać się między listą reperów a wykresami. 
+</p>
+
+<p>Lista reperów wchodzących w skład grupy reperów odniesienia zawiera 
+wartości przemieszczeń wskazanych reperów, błąd wyznaczenia tych przemieszczeń oraz 
+obliczoną dla podanego współczynnika <i>k</i> tolerancję. Przy nazwie każdego punktu 
+jest pole wyboru. Odznaczenie tego pola powoduje, że taki punkt nie będzie traktowany 
+jako reper odniesienia.</p>
+
+<p align="center"><img src="pmk_man/Image32.gif" width="550" height="400"></p>
+<p align="center"><b>Rys. 5.8</b> Lista reperów wchodząca w skład grupy punktów odniesienia.</p>
+<br><br>
+
+<p>W celu ułatwienia procesu decyzyjnego, którą grupę reperów odniesienia należy 
+  uznać za stałą można obejrzeć przemieszczenia reperów na wykresach. Wykres ogólny 
+  przedstawia wybraną grupę reperów odniesienia na tle wszystkich punktów przeznaczonych 
+  na repery odniesienia. Każdy reper wchodzącye w skład wybranej grupy punktów 
+  odniesienia jest podświetlony kolorem ciemno-czerwonym. Wykres ten pomaga zidentyfikować 
+  grupę reperów stałych, których wartości przemieszczeń oscylują wokół zera, a 
+  więc znajdującą się najbliżej środka ciężkości utworzonego układu. </p>
+
+<p align="center"><img src="pmk_man/FormChart1.gif"></p>
+<p align="center"><b>Rys. 5.9</b> Prezentacja wektorów przemieszczeń wszystkich reperów</p>
+<br><br>
+
+<p align="center"><img src="pmk_man/FormChart2.gif"></p>
+<p align="center"><b>Rys. 5.10</b> Prezentacja wektorów przemieszczeń wybranej 
+grupy reperów wraz z ich przedziałami ufności</p>
+<br><br>
+
+<p>Wykres szczegółowy przedstawia tylko repery 
+wchodzące w skład grupy reperów odniesienia wraz z granicami przedziału ufności dla 
+poszczególnych reperów. Wykres ten ma charakter poglądowy ponieważ identyfikacja grup 
+reperów stałych przeprowadzana jest na podstawie błędów wyznaczenia różnicy przemieszczeń 
+par reperów obliczonych podczas wyrównania.
+</p>
+
+<p>Po wyborze reperów stanowiących układ odniesienia, kreator prosi o wybór 
+sposobu prowadzenia obliczeń przemieszczeń bezwzględnych. Do wyboru są dwie opcje. 
+Pierwszą jest wyrównanie swobodne, które jednocześnie z wyrównaniem przeprowadza 
+transformację uzyskanych przemieszczeń na układ odniesienia tworzony przez repery stałe. 
+Prowadzenie rachunków w ten sposób powoduje częściową eliminację błędów systematycznych 
+i przypadkowych, a co za tym idzie zmniejszenie wielkości poprawek i błędu średniego przemieszczeń. 
+</p>
+
+<p>Druga opcja pozwala na wykonania wyrównania sztywnego, 
+z założeniem bezbłędności identyfikacji zbioru punktów odniesienia. Podczas wyrównania przyjmuje się, 
+że przemieszczenia reperów odniesienia są równe zeru i bezbłędne.</p>
+
+<p align="center"><img src="pmk_man/Image35.gif" width="550" height="400"></p>
+<p align="center"><b>Rys. 5.11</b> Wybór sposobu prowadzenia obliczeń</p>
+<br><br>
+
+<p>Po wyborze sposobu prowadzenia obliczeń 
+następuje ostateczne wyrównanie pomierzonych różnic wysokości. Po zakończeniu obliczeń 
+wyświetlana jest informacja o wielkości błędu m<sub>0</sub>, a wyniki obliczeń są 
+zapisywane do dokumentu.</p>
+
+<p align="center"><img src="pmk_man/FormErrors.gif"></p>
+<p align="center"><b>Rys. 5.12</b> Błędy i ostrzeżenia wykryte podczas kontroli danych</p>
+<br><br>
+</div>
+
+<!-- Generator obserwacji -->
+<div>
+<a name="GeneratorObserwacji"></a>
+						  
+	<table class="clsTitleTable" border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td nowrap="nowrap" class="clsTitleCell">Generator obserwacji</td>
+			<td nowrap="nowrap"><img src="pmk_man/title_triangle.gif" width="19" height="18"></td>
+			<td width="100%"> </td>
+		</tr>
+	</tbody></table> 
+	
+<p>Program Pmk umożliwia generowanie 
+fikcyjnych obserwacji przewyższeń między reperami. Podobnie jak w przypadku obliczania 
+przemieszczeń pionowych proces generowania obserwacji jest przeprowadzany przy użyciu kreatora. 
+W pierwszym kroku należy ustalić kryteria, jakimi ma się kierować kreator podczas obliczeń. 
+Możńa wybierać jedną z dwóch opcji:
+	</p><ul>
+		<li>Generowanie przemieszceń ewidentnych</li>
+		<li>Generowanie przemieszczeń na granicy wyznaczalności.</li>
+	</ul>
+<p></p>
+
+
+
+<p>Oprócz tego można ustalić czy należy generować kilka baz odniesienia. </p>
+<p align="center"><img src="pmk_man/Image37.gif" width="550" height="400"></p>
+<p align="center"><b>Rys. 5.13</b> Kryteria generowanych obserwacji przewyższeń między reperami..</p>
+<br><br>
+
+<p>W następnym kroku należy utworzyć 
+listę nazw reperwów stałych oraz listę reperó badanych. W programie <i>Pmk</i> przyjęto konwencję, 
+że nazwy reperów odniesienia rozpoczynają się od przedrostka "Rp&#65533;, natomiast nazwy reperów badanych 
+są nazywane kolejnymi numerami.
+</p>
+
+<p align="center"><img src="pmk_man/Image39.gif" width="550" height="400"></p>
+<p align="center"><b>Rys. 5.14</b> Lista reperów badanych oraz reperó odniesienia</p>
+<br><br>
+
+<p>Po utworzeniu nazw reperów kreator przechodzi do obliczeń. W pierwszym etapie 
+  obliczeń generowane są rzędne prawdziwe reperów badanych w cyklu aktualnym i 
+  wyjściowym. Najpierw obliczane są rzędne reperów badanych w cyklu wyjściowym. 
+  Są to wartości przypadkowe wyznaczane przy pomocy generatora liczb losowych. 
+  Następnie na podstawie wygenerowanych wartości dla cyklu wyjściowego obliczane 
+  są rzędne dla cyklu aktualnego.</p>
+
+<p>Po tych czynnościach jest utworzona lista reperów odniesienia 
+oraz reperów badanych z wygenerowanymi rzędnymi prawdziwymi w obu cyklach pomiarowych. 
+Na tej podstawie są generowane obserwacje obarczone błędem przypadkowym, 
+takim jaki uzyskuje się podczas pomiaru. Podczas obliczeń kreator przyjmuje wartość m<sub><i>0</i></sub> = 0.7.</p>
+
+
+<p> Po zakończeniu obliczeń 
+wszystkie obserwacje są zapisywane do dokumentu.</p>
+</div>
+
+
+
+					</td>
+	<td width="50"> </td><td nowrap="nowrap" width="100" align="left" valign="top"></td>
+						<td width="20"> </td>
+					</tr>
+				</tbody></table>
+		</td></tr>
+		<tr><td height="20">
+			
+	<br>
+	<table class="clsFootterTable" width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td class="clsMainMenuCell"> </td>
+			<td class="clsMainMenuCell"> </td>
+			<td class="clsMainMenuCell"><a class="clsMainMenuLink" href="http://geosoft.glt.pl/contact">Kontakt</a></td>
+			<td><img src="pmk_man/footter_triangle.gif" width="40" height="17" align="top"></td>
+			<td class="clsMainMenuBlankCell" width="100%" align="right" valign="bottom">
+			  <a href="http://geosoft.glt.pl/"><font color="#c4d1dd">www.geosoft.glt.pl</font></a>   
+			</td>
+		</tr>
+	</tbody></table> 
+	
+		</td></tr>	
+	</tbody></table> 
+	
+</body></html>
